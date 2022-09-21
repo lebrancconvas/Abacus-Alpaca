@@ -15,9 +15,13 @@ func main() {
 	rl.SetTargetFPS(fps); 
 
 	for !rl.WindowShouldClose() {
+		// Begin Draw 
 		rl.BeginDrawing();
-		rl.ClearBackground(rl.RayWhite);
+
+		rl.ClearBackground(rl.Green); // Background Color. 
 		rl.DrawText("Alpaca", 100, 100, 20, rl.Black);
+
+		// End Draw 
 		rl.EndDrawing();
 	}
 
